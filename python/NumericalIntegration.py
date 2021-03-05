@@ -96,7 +96,7 @@ if __name__ == "__main__":
     plt.plot(nGL, GL_err, 'bo', label='Gauss-Legendre estimate')
 
     # we can do this since n is the same for both
-    plt.plot(ntrap, trap_ests - GL_ests, 'kd', label='Trapezoidal - Gauss-Legendre', alpha=0.25, markersize=5)
+    plt.plot(ntrap, trap_ests - GL_ests, 'kd', label='Trapezoidal - Gauss-Legendre', alpha=0.75, markersize=5)
 
     plt.xlabel('n')
     plt.ylabel('True value - Integral estimate')
